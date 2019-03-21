@@ -1,7 +1,9 @@
-#ifndef REG_H
-#define REG_H
+#ifndef REGISTER_H
+#define REGISTER_H
 
-//REG OPERATIONS
+
+
+//REGISTER OPERATIONS
 
 #define UINT32_1 ((uint32_t)1)
 
@@ -16,13 +18,9 @@
 #define RCC_AHB1ENR_OFFSET 0x30
 #define GPIO_EN_BIT(port) (port)
 
-//GPIO
-#define GPIO_PORTA 0
-#define GPIO_PORTB 1
-#define GPIO_PORTC 2
-#define GPIO_PORTD 3
 
 #define GPIO_BASE(port) (0x40020000 + 0x400 * (port))
+
 
 #define GPIOx_MODER_OFFSET 0x00
 #define MODERy_1_BIT(y) ((y)*2 + 1)
